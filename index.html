@@ -70,7 +70,7 @@
     <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
         <div class="hero-container" data-aos="fade-in">
             <h1>Abraham Rivera Rojas</h1>
-            <p>Soy <span class="typed" data-typed-items="Diseñador, Desarrollador, Freelancer, Youtuber"></span></p>
+            <p>Soy <span class="typed" data-typed-items="Desarrollador web y móvil, Freelancer, Youtuber"></span></p>
         </div>
     </section>
     <!-- End Hero -->
@@ -310,13 +310,13 @@
 
                 <div class="section-title">
                     <h2>Resumen</h2>
-                    <p>Conoce un poco más acerca de mi trayectoria estudiantil y profesional.</p>
+                    <p>Conoce un poco más acerca de mi trayectoria académica y profesional.</p>
                 </div>
 
                 <div class="row">
                     <div class="col-lg-6" data-aos="fade-up">
 
-                        <h3 class="resume-title">Education</h3>
+                        <h3 class="resume-title">Educación</h3>
                         <div class="resume-item">
                             <h4>Ing. TIC'S Area sistemas informáticos</h4>
                             <h5>2019 - 2021</h5>
@@ -327,7 +327,7 @@
                             <h4>TSU TIC'S Area sistemas informáticos</h4>
                             <h5>2017 - 2019</h5>
                             <p><em>Universidad Tecnológica de Nezahualcoyotl</em></p>
-                            <p>En la ingeniería culminé mis estudios universitarios para abrirme paso al mundo laboral</p>
+                            <p>En el TSU fue donde aprendí lo esencial de mi carrera.</p>
                         </div>
                     </div>
 
@@ -524,35 +524,23 @@
                 <div class="row" data-aos="fade-in">
 
                     <div class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-stretch">
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <form action="https://formsubmit.co/admin@cod3f1re.com" method="POST" role="form" class="php-email-form">
                             <div class="row">
                                 <div class="form-group col-md-6">
-                                    <label for="name">Tu nombre</label>
-                                    <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Por favor, escribe mas de 4 letras" />
-                                    <div class="validate"></div>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="name">Tu correo</label>
+                                    <label>Tu correo</label>
                                     <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Por favor, escribe un correo electrónico valido" />
                                     <div class="validate"></div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="name">Tema</label>
-                                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Por favor, escribe el tema con mas de 4 letras" />
+                                <label>Mensaje</label>
+                                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Por favor, describe mejor el por que me contactas"></textarea>
                                 <div class="validate"></div>
                             </div>
-                            <div class="form-group">
-                                <label for="name">Mensaje</label>
-                                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Por favor, descrobe mejor el por que me contactas"></textarea>
-                                <div class="validate"></div>
+                            <input type="hidden" name="_subject" value="Contactaron por github!">
+                            <div class="text-center">
+                                <button type="submit">Enviar Mensaje</button>
                             </div>
-                            <div class="mb-3">
-                                <div class="loading">Cargando</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Tu mensaje fue enviado. Gracias!</div>
-                            </div>
-                            <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
                         </form>
                     </div>
 
