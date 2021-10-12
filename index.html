@@ -69,7 +69,7 @@
                             <div class="col-lg-6">
                                 <ul>
                                     <li><i class="icofont-rounded-right"></i> <strong>Cumpleaños:</strong> 24 de septiembre de 1999</li>
-                                    <li><i class="icofont-rounded-right"></i> <strong>Sitio web:</strong> <a href="http://cod3f1re.github.io/"> Cod3fire.github.io</a> </li>
+                                    <li><i class="icofont-rounded-right"></i> <strong>Sitio web:</strong> <a href="http://cod3f1re.com/"> Cod3fire.com</a> </li>
                                     <li><i class="icofont-rounded-right"></i> <strong>Teléfono:</strong> 5511940878</li>
                                     <li><i class="icofont-rounded-right"></i> <strong>Ciudad:</strong> Mexico</li>
                                 </ul>
@@ -91,6 +91,7 @@
 
             </div>
         </section>
+
         <!-- Fin Acerca de -->
         <!--
         <section id="facts" class="facts">
@@ -494,7 +495,7 @@
                 <div class="row" data-aos="fade-in">
 
                     <div class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-stretch">
-                        <form action="https://formsubmit.co/admin@cod3f1re.com" method="POST" role="form" class="php-email-form">
+                        <form action="https://formsubmit.co/admin@cod3f1re.com" method="POST" role="form" class="php-email-form" name="formularioContacto" onsubmit="return validarFormulario()">
                             <div class="row">
                                 <div class="form-group col-md-6">
                                     <label>Tu correo</label>
@@ -504,21 +505,26 @@
                             </div>
                             <div class="form-group">
                                 <label>Mensaje</label>
-                                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Por favor, describe mejor el por que me contactas"></textarea>
+                                <textarea class="form-control" name="message" id="message"  rows="10" data-rule="required" data-msg="Por favor, describe mejor el por que me contactas"></textarea>
                                 <div class="validate"></div>
                             </div>
                             <input type="hidden" name="_subject" value="Contactaron por github!">
                             <div class="text-center">
-                                <button type="submit">Enviar Mensaje</button>
+                                <button type="submit" >Enviar Mensaje</button>
                             </div>
                         </form>
                     </div>
+                    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true"
+                         style="background-color: #5ac46c; text-align: right; position: absolute; top: 3rem; right: 0; color:white;">
+                        <div class="toast-body" >
+                            El mensaje se ha enviado correctamente.
+                        </div>
+                    </div>
+
 
                 </div>
-
             </div>
         </section>
-        <!-- End Contact Section -->
 
     </main>
     <!-- End #main -->
@@ -541,7 +547,6 @@
     <script src="assets/vendor/typed.js/typed.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
 
-    <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
 </body>

@@ -31,7 +31,7 @@
 
         $('html, body').animate({
           scrollTop: scrollto
-        }, 1500, 'easeInOutExpo');
+        }, 100, 'easeInOutExpo');
 
         if ($(this).parents('.nav-menu, .mobile-nav').length) {
           $('.nav-menu .active, .mobile-nav .active').removeClass('active');
@@ -55,7 +55,7 @@
         var scrollto = $(initial_nav).offset().top;
         $('html, body').animate({
           scrollTop: scrollto
-        }, 1500, 'easeInOutExpo');
+        }, 100, 'easeInOutExpo');
       }
     }
   });
@@ -110,7 +110,7 @@
   $('.back-to-top').click(function() {
     $('html, body').animate({
       scrollTop: 0
-    }, 1500, 'easeInOutExpo');
+    }, 100, 'easeInOutExpo');
     return false;
   });
 
@@ -191,3 +191,20 @@
   });
 
 })(jQuery);
+
+
+function validarFormulario() {
+  let email = document.forms["formularioContacto"]["email"].value;
+  if (email === "") {
+    alert("Debes de introducir un correo");
+    return false;
+  }
+  let mensaje = document.forms["formularioContacto"]["message"].value;
+  if (mensaje === "") {
+    alert("Debes de introducir un mensaje");
+    return false;
+  }
+  if(mensaje !== "" && email!== ""){
+    $('.toast').toast('show');
+  }
+}
