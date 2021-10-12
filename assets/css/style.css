@@ -26,7 +26,12 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
-
+  @media (max-width: 600px) {
+    .verProyecto {
+      width: 336px;
+      height: 200px;
+    }
+  }
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
