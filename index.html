@@ -494,29 +494,36 @@
 
                 <div class="row" data-aos="fade-in">
 
-                    <div class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-stretch">
-                        <form action="https://formsubmit.co/admin@cod3f1re.com" method="POST" role="form" class="php-email-form" name="formularioContacto" onsubmit="return validarFormulario()">
+                    <div class="col-lg-12 align-items-stretch">
+                        <form action="https://formsubmit.co/admin@cod3f1re.com" method="POST" role="form" name="formularioContacto" onsubmit="return validarFormulario()">
                             <div class="row">
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-md-12">
                                     <label>Tu correo</label>
-                                    <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Por favor, escribe un correo electrónico valido" />
+                                    <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Por favor, escribe un correo electrónico valido" style="border-radius: 0;box-shadow: none;font-size: 14px;height: 44px; width: 100%"/>
                                     <div class="validate"></div>
                                 </div>
                             </div>
+                            <br>
+                            <div class="row">
+                                <div class="form-group col-md-12">
                             <div class="form-group">
                                 <label>Mensaje</label>
                                 <textarea class="form-control" name="message" id="message"  rows="10" data-rule="required" data-msg="Por favor, describe mejor el por que me contactas"></textarea>
                                 <div class="validate"></div>
                             </div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="_next" value="https://cod3f1re.github.io/">
                             <input type="hidden" name="_subject" value="Contactaron por github!">
+                            <br>
                             <div class="text-center">
-                                <button type="submit" >Enviar Mensaje</button>
+                                <button type="submit"  style="background: #149ddd; border: 0;padding: 10px 24px;color: #fff;transition: 0.4s;border-radius: 4px;" >Enviar Mensaje</button>
                             </div>
                         </form>
                     </div>
                     <div class="toast" role="alert" aria-live="assertive" aria-atomic="true"
                          style="background-color: #5ac46c; text-align: right; position: absolute; top: 3rem; right: 0; color:white;">
-                        <div class="toast-body" >
+                        <div class="toast-body">
                             El mensaje se ha enviado correctamente.
                         </div>
                     </div>
@@ -525,7 +532,6 @@
                 </div>
             </div>
         </section>
-
     </main>
     <!-- End #main -->
 
