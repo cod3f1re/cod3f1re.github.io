@@ -12,7 +12,7 @@ class Menu extends HTMLElement {
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/profile-img.jpg" alt="Abraham Rivera Rojas" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Abraham Rivera</a></h1>
         <h5 class="text-light text-center"><a href="index.html">Cod3F1re</a></h5>
         <div class="social-links mt-3 text-center">
@@ -29,7 +29,7 @@ class Menu extends HTMLElement {
           <li><a href="index.html#hero"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
           <li><a href="index.html#acercade"><i class="bx bx-user"></i> <span>Acerca de</span></a></li>
           <li><a href="index.html#resumen"><i class="bx bx-file-blank"></i> <span>Resumen</span></a></li>
-          <li class="active"><a href="index.html#portafolio"><i class="bx bx-book-content"></i> Portafolio</a></li>
+          <li><a href="index.html#portafolio"><i class="bx bx-book-content"></i> Portafolio</a></li>
           <li><a href="index.html#contacto"><i class="bx bx-envelope"></i> Contacto</a></li>
         </ul>
       </nav>
