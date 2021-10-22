@@ -28,8 +28,8 @@ class Menu extends HTMLElement {
         <ul>
           <li><a href="#hero"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
           <li><a href="#acercade"><i class="bx bx-user"></i> <span>Acerca de</span></a></li>
-          <li><a href="#resumen"><i class="bx bx-file-blank"></i> <span>Resumen</span></a></li>
           <li><a href="#portafolio"><i class="bx bx-book-content"></i> Portafolio</a></li>
+          <li><a href="#resumen"><i class="bx bx-file-blank"></i> <span>Resumen</span></a></li>
           <li><a href="#contacto"><i class="bx bx-envelope"></i> Contacto</a></li>
 
         </ul>
